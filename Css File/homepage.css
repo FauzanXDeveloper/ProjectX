@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,111,121,1) 30%, rgba(0,212,255,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    padding: 0 19%;
+}
+
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-text h1 {
+    font-family: 'Courier New', Courier, monospace, cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img img {
+    width: 600px;
+    height: auto;
+}
+
+.hero-text a {
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.logout {
+    display: flex;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.logout:hover {
+    color: black;
+    border: 2px solid black;
+}

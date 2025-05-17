@@ -1,0 +1,34 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "role": "Father",
+            "age": 55,
+            "status": "Alive",
+            "marital_status": "Married",
+            "image": "father.jpg",
+            "children": [2, 3]  
+        },
+        {
+            "id": 2,
+            "name": "Michael Doe",
+            "role": "Son",
+            "age": 30,
+            "status": "Alive",
+            "marital_status": "Single",
+            "image": "son.jpg",
+            "children": []
+        },
+        {
+            "id": 3,
+            "name": "Anna Doe",
+            "role": "Daughter",
+            "age": 28,
+            "status": "Alive",
+            "marital_status": "Married",
+            "image": "daughter.jpg",
+            "children": []
+        }
+    ]
+}

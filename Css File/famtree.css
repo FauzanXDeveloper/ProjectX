@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.logout {
+    display: flex;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.logout:hover {
+    color: black;
+    border: 2px solid black;
+}
+
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+/* Line between family members */
+.connector {
+    position: absolute;
+    width: 2px;
+    background-color: #555; /* Dark gray line color */
+    height: 100px; /* Adjust based on the card height */
+    left: 50%; /* Position it in the center of the container */
+    top: 50%; /* You can adjust this depending on how you want to position the line */
+    z-index: -1; /* Ensure it's behind the cards */
+}
+
+/* Position the connecting point (the dot at the top of the line) */
+.connector::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #777; /* Circle color */
+    top: -5px; /* Adjust so it sits at the top of the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
